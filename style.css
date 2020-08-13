@@ -35,6 +35,23 @@
      width: 150px;
  }
 
+ .img50 {
+     width: 100%;
+     height: 100%;
+ }
+
+ .img25 {
+     width: 100%;
+     height: 100%;
+     display: none;
+ }
+
+ .img10 {
+     width: 100%;
+     height: 100%;
+     display: none;
+ }
+
  .nav-links {
      -webkit-animation: fadein 1s;
      /* Safari, Chrome and Opera > 12.1 */
@@ -277,11 +294,6 @@
      z-index: 2;
  }
 
- .controls {
-     display: flex;
-     justify-content: center;
- }
-
  #leftArrow {
      width: 100px;
      margin-right: 100px;
@@ -314,4 +326,53 @@
      left: 50%;
      right: 50%;
      z-index: 30;
+ }
+
+ @media screen and (max-width:1366px) {
+     .img50 {
+         display: none;
+     }
+     .img25 {
+         display: inherit;
+     }
+     h1, h2 {
+         font-size: 30px !important;
+     }
+     h3 {
+         font-size: 25px !important;
+     }
+     #ps5features {
+         height: 50vh;
+     }
+     #leftArrow, #rightArrow {
+         width: 70px;
+         height: 70px;
+     }
+     #circle {
+         width: 800px;
+         height: 800px;
+     }
+     .one {
+         bottom: 10%;
+         left: 33%;
+     }
+     .two {
+         bottom: 25%;
+         right: 10%;
+     }
+     .three {
+         top: 15%;
+         right: 18%;
+     }
+     .four {
+         top: 15%;
+         left: 20%;
+     }
+     .five {
+         bottom: 30%;
+         left: 10%;
+     }
+     .feature {
+         width: 256px;
+     }
  }
