@@ -10,21 +10,31 @@
 
 <body>
     <div class="main">
-        <nav>
+       <!-- <nav>
             <div class="logo">
                 <img src="images/logo.png">
             </div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">PS5</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#ps5section">PS5</a></li>
                     <li><a href="#">DUALSHOCK</a></li>
                     <li><a href="#">ACCESORIES</a></li>
                     <li><a href="#">GAMES</a></li>
                 </ul>
             </div>
-        </nav>
-        <section>
+        </nav> -->
+        <header class="header"><input class="menu-btn" type="checkbox"
+            id="menu-btn" /><label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <img class="logo" src="images/logo.png">
+        <ul class="menu">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#ps5section">PS5</a></li>
+            <li><a href="#">DUALSHOCK</a></li>
+            <li><a href="#">ACCESORIES</a></li>
+        </ul>
+    </header>
+        <section id="home">
             <div class="home">
                 <h1>A new way to experience gaming</h1>
                 <img class="img50" src="images/ps5home50.png" alt="">
@@ -41,7 +51,7 @@
                         allowfullscreen></iframe>
             </div>
         </section>
-        <section>
+        <section id="ps5section">
             <div class="ps5">
                 <section class="image">
                     <h2>Presenting the future of gaming consoles</h2>
