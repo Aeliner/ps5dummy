@@ -664,7 +664,7 @@
  @media screen and (max-width:374px)
  {
     #circle{
-        margin-top:calc(15vh + 15vw);
+        margin-top:calc(18vh + 15vw);
     }
  }
 
