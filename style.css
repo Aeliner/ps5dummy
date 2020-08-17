@@ -318,7 +318,7 @@
  .slider {
      display: flex;
      justify-content: center;
-     align-items: end;
+     align-items: flex-end;
      position: absolute;
      left: 50%;
      right: 50%;
@@ -429,231 +429,235 @@
      top: 0;
  }
 
-
-
-
  @media screen and (max-width:1366px) {
-    .img50 {
-        display: none;
-    }
-    .img25 {
-        display: inherit;
-    }
-    h1, h2 {
-        font-size: 30px !important;
-    }
-    h3 {
-        font-size: 25px !important;
-    }
-    #ps5features {
-        height: 50vh;
-    }
-    #leftArrow, #rightArrow {
-        width: 70px;
-        height: 70px;
-    }
+     .img50 {
+         display: none;
+     }
+     .img25 {
+         display: inherit;
+     }
+     h1, h2 {
+         font-size: 30px !important;
+     }
+     h3 {
+         font-size: 25px !important;
+     }
+     #ps5features {
+         height: 50vh;
+     }
+     #leftArrow, #rightArrow {
+         width: 70px;
+         height: 70px;
+     }
+     #circle {
+         width: 800px;
+         height: 800px;
+     }
+     .one {
+         bottom: 10%;
+         left: 33%;
+     }
+     .two {
+         bottom: 25%;
+         right: 10%;
+     }
+     .three {
+         top: 15%;
+         right: 18%;
+     }
+     .four {
+         top: 15%;
+         left: 20%;
+     }
+     .five {
+         bottom: 30%;
+         left: 10%;
+     }
+     .feature {
+         width: 256px;
+     }
+ }
+
+ @media (min-width: 801px) {
+     .header li {
+         float: left;
+     }
+     .header li a {
+         padding: 20px 30px;
+     }
+     .header .menu {
+         clear: none;
+         float: right;
+         max-height: none;
+     }
+     .header .menu-icon {
+         display: none;
+     }
+ }
+
+ @media (max-width:801px) {
+     .header {
+         display: block;
+     }
+     .header .logo {
+         font-size: 1.5em;
+         padding: 18px 20px;
+         width: 100px;
+         height: 22px;
+     }
+     iframe {
+         width: 90% !important;
+         height: 40vh !important;
+     }
+     .launch h2, .image h2, .hardware h2, .information h2 {
+         margin-top: 8px;
+     }
+     h1, h2 {
+         font-size: 25px !important;
+     }
+     .launch iframe, .hardware iframe {
+         margin-bottom: 20px;
+     }
+     section {
+         margin: 30px 0px 30px 0px;
+     }
+     .information #ps5features {
+         height: 45vh;
+     }
+     .main {
+         overflow-x: hidden;
+         overflow-y: auto;
+     }
+     #home {
+         margin-top: 0px;
+     }
+ }
+
+ @media screen and (max-width:450px) {
+     .img25 {
+         display: none;
+     }
+     .img50 {
+         display: none;
+     }
+     .img10 {
+         display: inherit;
+     }
+     h1, h2, h3 {
+         font-size: 16px !important;
+     }
+     h1 {
+         margin-top: -10px !important;
+     }
+     h2 {
+         margin-bottom: 15px !important;
+         margin-top: 0px !important;
+     }
+     h3 {
+         margin-top: 0px !important;
+     }
+     section {
+         margin: 15px 0px 15px 0px;
+     }
+     iframe {
+         width: 100% !important;
+         height: 30vh !important;
+     }
+     p {
+         font-size: 12px !important;
+     }
+     .ps5desc {
+         width: 90% !Important;
+     }
+     #leftArrow {
+         margin-right: 10px;
+     }
+     #leftArrow, #rightArrow {
+         width: 30px;
+         height: 30px;
+     }
+     #circle {
+         width: 100vw;
+         height: 100vw;
+         margin-top:20vh;
+     }
+     .feature {
+         width: 128px;
+     }
+     .information #ps5features {
+         height: 350px;
+         width: 128px;
+     }
+     #rightArrow {
+         margin-left: 10px;
+     }
+     .feature img {
+         margin-bottom: 5px;
+         width: 64px;
+         height: 64px;
+     }
+     .one {
+         bottom: 0%;
+         left: calc((100vw - 128px)/2);
+         right: 0%;
+     }
+     .two {
+         top: 42%;
+         right: 5%;
+     }
+
+     .three {
+         top: 10%;
+         right: 15%;
+     }
+     .four {
+         top: 10%;
+         left: 18%;
+     }
+     .five {
+         bottom: 25%;
+         left: 5%;
+     }
+     .information #ps5features {
+         width: 128px;
+     }
+     .feature {
+         height: 128px;
+         width: 128px;
+     }
+ }
+
+ @media screen and (max-height:900px){
     #circle {
-        width: 800px;
-        height: 800px;
-    }
-    .one {
-        bottom: 10%;
-        left: 33%;
-    }
-    .two {
-        bottom: 25%;
-        right: 10%;
-    }
-    .three {
-        top: 15%;
-        right: 18%;
-    }
-    .four {
-        top: 15%;
-        left: 20%;
-    }
-    .five {
-        bottom: 30%;
-        left: 10%;
-    }
-    .feature {
-        width: 256px;
+        margin-top: calc(5vh + 15vw)
     }
 }
 
-@media (min-width: 801px) {
-    .header li {
-        float: left;
-    }
-    .header li a {
-        padding: 20px 30px;
-    }
-    .header .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-    .header .menu-icon {
-        display: none;
-    }
-}
+ @media screen and (max-height:820px){
+     #circle {
+         margin-top: calc(15vh + 10vw);
+     }
+ }
 
+ @media screen and (max-height:750px)
+ {
+     #circle{
+        margin-top: calc(15% + 15vh);
+     }
+ }
 
-@media (max-width:801px) {
-    .header {
-        display: block;
-    }
+ @media screen and (max-height:667px)
+ {
+        #circle{
+            margin-top: calc(20vh + 10vw);
+        }
+ }
 
-    .header .logo {
-        font-size: 1.5em;
-        padding: 18px 20px;
-        width: 100px;
-        height: 22px;
-    }
+ @media screen and (max-height:568px)
+ {
+        #circle{
+            margin-top: calc(30vh + 10vw);
+        }
+ }
 
-    iframe{
-        width:90% !important;
-        height:40vh !important;
-    }
-
-.launch h2, .image h2, .hardware h2, .information h2 {
-    margin-top: 8px;
-  }
-    h1, h2 {
-      font-size: 25px !important;
-    }
-
-  
-  .launch iframe, .hardware iframe {
-    margin-bottom: 20px;
-  }
-  
-  section {
-    margin: 30px 0px 30px 0px;
-  }
-  
-  .information #ps5features {
-    height: 45vh;
-  }
-  
-  .main {
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  #home {
-    margin-top: 0px;
-  }
-  
-}
-
-@media screen and (max-width:450px)
-{
-    .img25 {
-        display: none;
-    }
-    .img50 {
-        display: none;
-    }
-    .img10{
-        display:inherit;
-    }
-
-    h1, h2, h3 {
-        font-size: 16px !important;
-      }
-
-    h1{
-        margin-top:-10px !important;
-    }
-
-    h2{
-        margin-bottom:15px !important;
-        margin-top:0px !important;
-    }
-
-    h3{
-        margin-top:0px !important;
-    }
-
-    section {
-        margin: 15px 0px 15px 0px;
-      }
-
-      iframe{
-        width:100% !important;
-        height:30vh !important;
-    }
-
-    p{
-        font-size:12px !important;
-    }
-
-    .ps5desc{
-        width:90% !Important;
-    }
-
-#leftArrow {
-    margin-right: 10px;
-  }
-
-    #leftArrow, #rightArrow {
-      width: 30px;
-      height: 30px;
-    }
-    #circle {
-      width: 600px;
-      height: 600px;
-    }
-    .feature {
-      width: 128px;
-    }
-  
-    .information #ps5features {
-      height:350px;
-      width:128px;
-    }
-  
-  #rightArrow {
-    margin-left: 10px;
-  }
-  
-  .feature img{
-      margin-bottom:5px;
-      width:64px;
-      height:64px;
-  }
-
-    .one {
-      bottom: 0%;
-      left: 22.5%;
-      right: 25%;
-    }
-    .two {
-      bottom: 12%;
-    }
-    .three {
-      top: 18%;
-      right: 5%;
-    }
-    .four {
-      top: 3%;
-      left: 30%;
-    }
-    .five {
-      bottom: 40%;
-      left: 0%;
-    }
-
-    #circle {
-      width: 500px;
-      height: 500px;
-    }
-    .information #ps5features {
-      width: 128px;
-    }
-    .feature {
-      height: 128px;
-      width:128px;
-    }
-  
-}
+ 
