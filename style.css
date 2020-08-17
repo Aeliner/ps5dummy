@@ -625,53 +625,55 @@
          height: 128px;
          width: 128px;
      }
- }
 
-
- @media screen and (max-height:900px){
-    #circle {
-        margin-top: calc(5vh + 15vw)
+     @media screen and (max-height:900px){
+        #circle {
+            margin-top: calc(5vh + 15vw)
+        }
     }
-}
-
- @media screen and (max-height:820px){
-     #circle {
-         margin-top: calc(15vh + 10vw);
+    
+     @media screen and (max-height:820px){
+         #circle {
+             margin-top: calc(15vh + 10vw);
+         }
+     }
+    
+     @media screen and (max-height:750px)
+     {
+         #circle{
+            margin-top: 15vh;
+         }
+     }
+    
+     @media screen and (max-height:667px)
+     {
+            #circle{
+                margin-top: calc(15vh + 15vw);
+            }
+     }
+    
+     @media screen and (max-height:568px)
+     {
+            #circle{
+                margin-top: calc(25vh + 15%);
+            }
+     }
+    
+     @media screen and (max-width:374px)
+     {
+        #circle{
+            margin-top:calc(18vh + 15vw);
+        }
+     }
+    
+     @media screen and (max-width:320px)
+     {
+        #circle{
+            margin-top:35vh;
+        }
      }
  }
 
- @media screen and (max-height:750px)
- {
-     #circle{
-        margin-top: calc(25vh);
-     }
- }
 
- @media screen and (max-height:667px)
- {
-        #circle{
-            margin-top: calc(15vh + 15vw);
-        }
- }
-
- @media screen and (max-height:568px)
- {
-        #circle{
-            margin-top: calc(25vh + 15%);
-        }
- }
-
- @media screen and (max-width:374px)
- {
-    #circle{
-        margin-top:calc(18vh + 15vw);
-    }
- }
-
- @media screen and (max-width:320px)
- {
-    #circle{
-        margin-top:35vh;
-    }
- }
+ 
  
