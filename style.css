@@ -2,7 +2,7 @@
      margin: 0;
      padding: 0;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     transition: 1s ease-in;
+     transition: 0.5s ease-in;
      scroll-behavior: smooth;
  }
 
@@ -112,7 +112,7 @@
      text-align: center;
  }
 
- .launch h2, .image h2, .hardware h2, .information h2 {
+ .launch h2, .image h2, .hardware h2, .information h2, .dualsense h2 {
      font-size: calc(1rem*3.05176);
      font-weight: 300;
      margin-top: -13px;
@@ -283,7 +283,7 @@
 
  .features {
      position: relative;
-     background: lightgrey;
+     background: #F5F5F5;
  }
 
  .information #ps5features {
@@ -428,6 +428,16 @@
      transform: rotate(45deg);
      top: 0;
  }
+ 
+
+ .dualsense{
+
+ }
+
+ .dualsense img{
+     display:block;
+     margin: 0 auto;  
+ }
 
  @media screen and (max-width:1366px) {
      .img50 {
@@ -509,7 +519,7 @@
          width: 90% !important;
          height: 40vh !important;
      }
-     .launch h2, .image h2, .hardware h2, .information h2 {
+     .launch h2, .image h2, .hardware h2, .information h2, .dualsense h2{
          margin-top: 8px;
      }
      h1, h2 {
@@ -672,6 +682,10 @@
             margin-top:35vh;
         }
      }
+ }
+
+ #mapster_wrap_0{
+     margin:0 auto;
  }
 
 
