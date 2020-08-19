@@ -241,9 +241,9 @@ var time = 300;
    function resize(newWinWidth, newWinHeight) {
        debugger;
        if($(window).width() < 450){
-        $('#dualsenseImg').mapster('resize', $(window).width(), 0, time);
+        $('#dualsenseImg').mapster('resize', $(window).width()*0.9, 0, time);
        } else{
-       var newImgWidth = 0;
+      /* var newImgWidth = 0;
        var newImgHeight = 0;
        newImgWidth = (newWinWidth * savedWidth) / savedWindowWidth;  
        if($(window).height < savedWindowHeight){
@@ -254,7 +254,8 @@ var time = 300;
        }
        else {
            $('#dualsenseImg').mapster('resize', newImgWidth, newImgHeight, time);
-       }
+       } */
+       $('#dualsenseImg').mapster('resize', $(window).width()*0.40, 0);
     }
    }
    $(window).resize(function(){ 
