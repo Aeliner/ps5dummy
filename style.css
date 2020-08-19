@@ -436,7 +436,9 @@
 
  .dualsense img{
      display:block;
-     margin: 0 auto;  
+     margin: 0 auto; 
+     width:50%;
+     height:50%;
  }
 
  @media screen and (max-width:1366px) {
@@ -544,6 +546,12 @@
  }
 
  @media screen and (max-width:450px) {
+
+    .dualsense img{
+        width:100%;
+        height:100%;
+    }
+
      .img25 {
          display: none;
      }
