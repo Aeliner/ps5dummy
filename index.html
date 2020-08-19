@@ -234,32 +234,14 @@
 <script>
 var time = 300;     
    var resizeDelay = 100;   
-   var savedWidth = $('#dualsenseImg').width();
-   var savedHeigth = $('#dualsenseImg').height(); 
-   var savedWindowWidth = $(window).width();
-   var savedWindowHeight = $(window).height();
-   function resize(newWinWidth, newWinHeight) {
-       debugger;
+   function resize() {
        if($(window).width() < 450){
         $('#dualsenseImg').mapster('resize', $(window).width()*0.9, 0, time);
        } else{
-      /* var newImgWidth = 0;
-       var newImgHeight = 0;
-       newImgWidth = (newWinWidth * savedWidth) / savedWindowWidth;  
-       if($(window).height < savedWindowHeight){
-           newImgHeight = (newWinHeight * savedHeigth) / savedWindowHeight;
-       }
-       if (savedWindowWidth === $(window).width()) {
-           $('#dualsenseImg').mapster('resize', savedWidth, savedHeigth, time);
-       }
-       else {
-           $('#dualsenseImg').mapster('resize', newImgWidth, newImgHeight, time);
-       } */
        $('#dualsenseImg').mapster('resize', $(window).width()*0.40, 0);
     }
    }
    $(window).resize(function(){ 
-       console.log("1");
        var curWidth = $(window).width(),
                curHeight = $(window).height(),
                checking = false;
@@ -277,6 +259,7 @@ var time = 300;
                checking = false;
            }, resizeDelay);
    });
+resize();
    
 </script>
 </html>
