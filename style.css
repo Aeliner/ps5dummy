@@ -412,7 +412,7 @@
  }
 
  .header .menu-btn:checked~.menu {
-     max-height: 240px;
+     max-height: 300px;
  }
 
  .header .menu-btn:checked~.menu-icon .nav-icon {
@@ -677,7 +677,9 @@
     transform: translate(-50%, -50%);
     width:100%;
     padding-top:30px;
+    color:dodgerblue;
 }
+
  @media screen and (max-width: 900px) {
     #slide1:checked ~ #controls label:nth-child(2),
     #slide2:checked ~ #controls label:nth-child(3),
