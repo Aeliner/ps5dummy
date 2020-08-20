@@ -114,7 +114,7 @@
 
  .launch h2, .image h2, .hardware h2, .information h2, .dualsense h2, .games h2, .accesories h2 {
      font-size: calc(1rem*3.05176);
-     font-weight: 300;
+     font-weight: 600;
      margin-top: -13px;
      text-align: center;
      margin-top: 30px;
@@ -636,13 +636,12 @@
     margin: 0 -50px 0 0;
     display: block;
  }
- #slide1:checked ~ #controls label:nth-last-child(2),
- #slide2:checked ~ #controls label:nth-last-child(3),
- #slide3:checked ~ #controls label:nth-last-child(4),
- #slide4:checked ~ #controls label:nth-last-child(1) {
+ #slide1:checked ~ #controls label:nth-last-child(1),
+ #slide2:checked ~ #controls label:nth-last-child(4),
+ #slide3:checked ~ #controls label:nth-last-child(3),
+ #slide4:checked ~ #controls label:nth-last-child(2) {
     background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
     float:left;
-    margin: 0 0 0 -50px;
     display: block;
  }
  #bullets {
@@ -663,6 +662,7 @@
  #slide4:checked ~ #bullets label:nth-child(4) {
     background: #444;
  }
+
 
  .accesories{
     position:relative;
@@ -690,7 +690,6 @@
        margin: 0;
     }
     #slides {
-       max-width: calc(100% - 140px);
        margin: 0 auto;
     }
  }
@@ -711,6 +710,10 @@
  @media screen and (max-width:1366px) {
      .game-card{
          width:90%;
+     } 
+
+     #slider{
+         width:80%;
      }
 
      .img50 {
@@ -778,6 +781,34 @@
        background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 159, 255, 0.2)), color-stop(60%, #212120), to(#212120));
        background: linear-gradient(to bottom, rgba(42, 159, 255, 0.2) 0%, #212120 60%, #212120 100%);
    }
+   #slider{
+       width:90%;
+   }
+ }
+
+ @media screen and (max-width: 834px)
+ {
+     .slide-content{
+         flex-direction:column;
+     }
+     .slide-content img{
+         display:block;
+         width:40%;
+         margin: 10px auto 0;
+         padding:0;
+     }
+     .slide-content .info{
+         padding:0;
+     }
+     .slide-content .info p{
+         margin:0;
+         width:80%;
+         line-height:25px;
+         font-size:16px;
+     }
+     .slide_2 .slide-content img{
+         width:25%;
+     }
  }
 
  @media (min-width: 801px) {
@@ -857,6 +888,28 @@
  }
 
  @media screen and (max-width:450px) {
+
+    #slider{
+        width:90%;
+    }
+
+    .container{
+        height:550px;
+    }
+
+    #controls{
+        height:25px;
+    }
+
+    #controls label{
+        width:25px;
+        height:25px;
+    }
+
+    #bullets{
+        margin: 215px 0 0;
+    }
+
     .game-card {
         height: 320px;
         min-height:300px;
